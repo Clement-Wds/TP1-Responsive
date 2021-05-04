@@ -1,0 +1,49 @@
+.header-nav{
+    overflow: hidden;
+}
+
+.nav-list{
+    background-color:#121926;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.nav-item{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    background-color:#2E4159;
+}
+
+.nav-item:active{
+    background-color: #2E4159;
+}
+
+.section-hero{
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
