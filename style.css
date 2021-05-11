@@ -2,15 +2,27 @@ body{
     margin: 0px;
 }
 
-.header-nav .nav-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.btn{
+    display: inline-block;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 20px 20px;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: black;
+    border: none;
+    background: none;
 }
 
-.header-main{
-    display: flex;
-    justify-content: space-between;
+.btn-black{
+    background-color: black;
+    color: white;
+}
+
+.btn-white{
+    background-color: white;
+    color:black;
 }
 
 .header-logo img{
@@ -27,6 +39,42 @@ body{
     font-weight: bold;
     font-size: 20px;
     display: inline-block;
+}
+
+.header-nav .nav-list{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.burger-menu{
+    width: 50px;
+    height: 25px;
+    position: relative;
+}
+
+.burger-menu .line{
+    background-color: black;
+    height: 3px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.burger-menu .line:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-menu .line:last-of-type {
+    bottom: 0%;
 }
 
 .section-hero{
@@ -85,4 +133,48 @@ body{
 
 .footer-main{
     text-align: center;
+}
+
+/* TELEPHONE */
+@media(max-width: 526px) {
+    .header-logo img{
+        width: 150px;
+    }
+    
+    .header-nav .nav-list .nav-link{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .header-nav .nav-list{
+        list-style: none;
+        padding: 0px;
+        display: block;
+    }
+    
+    .header-main{
+        display: block;
+        text-align: center;
+
+    }
+}
+
+/* TELEPHONE */
+@media(max-width: 526px) {
+    .section-about .about-wrapper{
+        display: flex;
+    }
+    
+    .about-wrapper .about-img, .about-wrapper .about-content{
+        width: 50%;
+    }
+    
+    .about-img img{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+    
 }
